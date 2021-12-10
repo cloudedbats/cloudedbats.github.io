@@ -1,30 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
-
-  // Get all "navbar-burger" elements
-  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-  // Check if there are any navbar burgers
-  if ($navbarBurgers.length > 0) {
-
-    // Add a click event on each of them
-    $navbarBurgers.forEach( el => {
-      el.addEventListener('click', () => {
-
-        // Get the target from the "data-target" attribute
-        const target = el.dataset.target;
-        const $target = document.getElementById(target);
-
-        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-        el.classList.toggle('is-active');
-        $target.classList.toggle('is-active');
-
-      });
-    });
-  }
-
-});
-
-// const navbar_burger_id = document.getElementById("navbar_burger_id");
 
 const div_introduction_id = document.getElementById("div_introduction_id");
 const div_bat_detectors_id = document.getElementById("div_bat_detectors_id");
@@ -52,8 +25,6 @@ function showDivision(div_id) {
 };
 
 function hideShowParts(tab_name) {
-  // navbar_burger_id.setAttribute("aria-expanded", "false");
-
   div_introduction_id.classList.remove("is-active");
   div_bat_detectors_id.classList.remove("is-active");
   div_post_processing_id.classList.remove("is-active");
@@ -87,47 +58,3 @@ function hideShowParts(tab_name) {
     showDivision(div_about_id)
   };
 };
-
-
-
-// // mobile menu
-// const burgerIcon = document.querySelector('#burger');
-// const navbarMenu = document.querySelector('#nav-links');
-
-// burgerIcon.addEventListener('click', () => {
-//   navbarMenu.classList.toggle('is-active');
-// });
-
-// // tabs
-// const tabs = document.querySelectorAll('.tabs li');
-// const tabContentBoxes = document.querySelectorAll('#tab-content > div');
-
-// tabs.forEach(tab => {
-//   tab.addEventListener('click', () => {
-//     tabs.forEach(item => item.classList.remove('is-active'));
-//     tab.classList.add('is-active');
-
-//     const target = tab.dataset.target;
-//     // console.log(target);
-//     tabContentBoxes.forEach(box => {
-//       if (box.getAttribute('id') === target) {
-//         box.classList.remove('is-hidden');
-//       } else {
-//         box.classList.add('is-hidden');
-//       }
-//     })
-//   })
-// })
-
-// // modal
-// const signupButton = document.querySelector('#signup');
-// const modalBg = document.querySelector('.modal-background');
-// const modal = document.querySelector('.modal');
-
-// signupButton.addEventListener('click', () => {
-//   modal.classList.add('is-active');
-// })
-
-// modalBg.addEventListener('click', () => {
-//   modal.classList.remove('is-active');
-// }) 
