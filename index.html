@@ -47,55 +47,65 @@
                         <h1 class="title">
                             Welcome to CloudedBats
                         </h1>
-                        <p>
-                            CloudedBats is my hobby/spare-time project where I'm trying 
-                            to develop a complete set of software tools to be used when 
-                            acoustically monitoring bats. 
-                            In the end it should cover the whole path from the ultrasonic 
+                        <p class="mb-4">
+                            CloudedBats is my hobby/spare-time project where I'm trying
+                            to develop a complete set of software tools to be used when
+                            acoustically monitoring bats.
+                            In the end it should cover the whole path from the ultrasonic
                             microphone to well documented survey results that can be shared.
                         </p>
-                        <p>
-                            Target groups are both professionals like scientists and consultants 
-                            as well as citizen scientists and other groups of bat enthusiasts.
-
+                        <p class="mb-4">
+                            Target groups are both professionals like scientists and
+                            environmental consultants as well as citizen scientists and
+                            other groups of bat enthusiasts.
                         </p>
-                       <p class="subtitle my-4">
+                        <p class="subtitle mb-4">
                             Why do we need open source software when monitoring bats?
                         </p>
                         <p class="mb-4">
-                            For me as a software developer, collaboration and transparency is the only way 
-                            today to develop and maintain software in an effective way. 
-                            Everyone is doing it, both beginners as well as big companies like Google 
+                            For me as a software developer, collaboration and transparency is the only way
+                            today to develop and maintain software in an effective way.
+                            Everyone is doing it, both beginners as well as big companies like Google
                             and Microsoft.
-                            And all software development tools and software libraries I uses in the 
-                            CloudedBats project are open and free. Then it is an easy decision 
+                            And all software development tools and software libraries I uses in the
+                            CloudedBats project are open and free. Then it is an easy decision
                             to also let my software to be open and free.
                         </p>
-                        <p class="subtitle my-4">
+                        <p class="subtitle mb-4">
                             What about the bats?
                         </p>
                         <p class="mb-4">
-                            We know too little about the more than 1400 bat species that has been 
-                            found today, and we must speed up the work. It's urgent because we are 
+                            We know too little about the more than 1400 bat species that has been
+                            found today, and we must speed up the work. It's urgent because we are
                             living in a rapidly changing world.
                         </p>
-                        <p class="mb-4">
-                            Therefore my focus is to find solutions that can be used in all countries, 
-                            not only in the northern part of Europe where I live. I think it is really 
-                            important that we also starts to openly and freely shares the sound 
-                            files that has been recorded directly and don't wait until an article or 
-                            report has been published. That will make it easier to collaborate if, for 
-                            example, both scientists and enthusiasts/citizen scientists share their 
+                        <p class="mb-2">
+                            Therefore my focus is to find solutions that can be used in all countries,
+                            not only in the northern part of Europe where I live. I think it is really
+                            important that we also starts to openly and freely shares the sound
+                            files that has been recorded directly and don't wait until an article or
+                            report has been published. That will make it easier to collaborate if, for
+                            example, both scientists and enthusiasts/citizen scientists share their
                             data and sound files.
                         </p>
-                        <p class="subtitle my-4">
+                        <p class="mb-4">
+                            You can read more about Open science here:
+                            <a href="https://en.wikipedia.org/wiki/Open_science">Open science</a>.
+
+                        </p>
+                        <p class="subtitle mb-4">
                             Where to start?
                         </p>
                         <p class="mb-4">
-                            There are a lot of experimental applications and code parts stored in the 
-                            software repository. They can be of interest for software developers. 
-                            For normal users the bat detector called WURB is a good start. 
-                            You can read more about is on the next page 
+                            There are a lot of experimental applications and code parts stored in the
+                            public software repository at GitHub.
+                            They can be of some interest for software developers.
+                            The source code repository can be found here:
+                            <a href="https://github.com/cloudedbats">CloudedBats at GitHub</a>.
+                        </p>
+                        <p class="mb-4">
+                            For normal users the bat detector called <em>WURB</em> is a good start.
+                            You can read more about it on the next page
                             <a onclick="hideShowParts('bat-detectors');">Bat detectors</a>.
                         </p>
                     </div>
@@ -114,50 +124,165 @@
                 <section class="columns px-2-mobile px-6-tablet">
                     <div class="column"></div>
                     <div class="column is-four-fifths">
-                        <h1 class="title">
-                            Bat detectors
-                        </h1>
-                        <p class="subtitle mt-2">
-                            The WURB detector
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur repudiandae rerum
-                            ipsum voluptas! Omnis, non quo ullam quis eveniet maiores dolorem, inventore aliquid
-                            mollitia odit exercitationem ex expedita, laborum natus.
+                        <div class="content">
+                            <h1 class="title">
+                                Bat detectors
+                            </h1>
+                            <p class="mb-4">
+                                Bats are special because they are so good at hiding.
+                                Most bat species are small, they are active when it is dark and
+                                they use ultrasound for navigation and communication.
+                                Therefore, detectors are needed that can record ultrasound and can be used for
+                                either active or passive monitoring.
+                            </p>
+                            <p class="mb-4">
+                                There are good bat detectors available, but I wanted a more flexible and powerful
+                                detector that can be extended in functionality when needed. My requirement list was
+                                something like this when I started to develop my own detector:
+                            <ul>
+                                <li>
+                                    The software should be open and free for all kind of usage, even commercial use
+                                    if someone want to include parts of it in products that are sold for money.
+                                </li>
+                                <li>
+                                    Hardware should be as cheap as possible and easily available where they are selling
+                                    electronic things. The core part should be a small computer that can run the
+                                    operating
+                                    system Linux.
+                                </li>
+                                <li>
+                                    There must be support for high quality ultrasonic microphones for professional use,
+                                    but also a possibility to have entry level alternatives for beginners.
+                                </li>
+                            </ul>
+                            </p>
+                            <p class="mb-4">
+                                This resulted in a Do-It-Yourself, DIY, bat detector based on three main parts:
+                            <ol>
+                                <li>
+                                    <span class="has-text-weight-bold">Computer:</span>
+                                    Raspberry Pi is a small computer that is powerful enough and has a
+                                    lot of features that makes it good to use for a bat detector.
+                                    The base price for it is 35$, but it will cost somewhere between 50 and 100$
+                                    depending on taxes and model.
+                                </li>
+                                <li>
+                                    <span class="has-text-weight-bold">Microphone:</span>
+                                    Ultrasonic microphones with USB connections are supported.
+                                    The detector automatically identifies microphones from Pettersson and Dodotronic.
+                                    For entry level options there are sound cards available that runs at a sampling
+                                    rate of 192 kHz.
+                                    That will be enough for the most common bat species and sound up to about 90 kHz
+                                    can be recorded.
+                                    But then you have to find a suitable microphone element and build that part
+                                    yourself.
+                                </li>
+                                <li>
+                                    <span class="has-text-weight-bold">Software:</span>
+                                    This is the part that I develop myself. Mainly based on my own needs and
+                                    what I think is fun to develop.
+                                </li>
+                                </ul>
+                                </p>
+                                <p>
+                                    The rest is probably things you already have. Power supply for the
+                                    Raspberry Pi computer is the same as the USB power sources used for mobile
+                                    phones.
+                                    The user interface for the detector is a web page that can run in a web
+                                    browser in your computer or mobile phone.
+                                    Recorded files can be stored on USB memorry sticks, or internally in the
+                                    detector for later download to a computer. Then there are extra options like
+                                    USB GPS receivers and USB 4G modems for internet access.
+                                </p>
+                                <p>
+                                    There are two things that makes other bat detector alternatives better.
+                                    One is power consumption and the Raspberry Pi needs up to 5 Watt of power
+                                    where other detectors can run for weeks on standard batteries.
+                                    A slightly bigger Powerbank can be used for single night sessions and will
+                                    last for about 12 hours.
+                                    If power is available you can use a mobile phone charger and run it permanently.
+                                </p>
+                                <p>
+                                    The other problem is that you must know a little about computers and how to run
+                                    commands from a terminal window when installing the software.
+                                    If you don't have that knowledge you must as for help, but I think that there
+                                    are many people who will be happy and found it interesting to set up a
+                                    Raspberry Pi for bat monitoring if you ask them.
+                                </p>
+                                <p class="subtitle my-4">
+                                    The WURB detector
+                                </p>
+                                <p class="mb-4">
+                                    The WURB detector has been developed since 2017 and I have tried different
+                                    option for configuration and control.
+                                    In 2020 I started a complete redesign of the software and the version called
+                                    "CloudedBats_WURB_2020" is more or less like I want it to be.
+                                    There are a lot of users and there are nearly no issues reported.
+                                </p>
+                                <p class="mb-4">
+                                    For my personal use I have four of them for field work, and some more for
+                                    development and test.
+                                    The field work detectors are all equipped with Pettersson u384 microphones and
+                                    are configured like this:
+                                <ul>
+                                    <li>
+                                        One WURB detector is for active monitoring. Audio feedback is activated and I
+                                        use a technique called pitch shifting for that.
+                                        It is like frequency division but the sound quality is not destroyed,
+                                        the frequencies are just divided by a factor between 10 and 50.
+                                        Recordings can be triggered either manually or automatically when sound is
+                                        detected.
+                                        If a GPS receiver is attached each file will have the correct position in the
+                                        file name that makes is useful for transect monitoring.
+                                    </li>
+                                    <li>
+                                        Then I have two detectors with powerbanks for deployment over night.
+                                        The GPS receiver can be removed after deployment since the position will
+                                        not change. If they are within a WiFi network they can be controlled
+                                        remotely and recorded files can be download while they are running and
+                                        are recording new files. I also have two 4G modems that be used to set up
+                                        communication tunnels (similar to VPN) for remote access and file download
+                                        from anywhere where internet is available. This is really handy because the
+                                        detectors can then be controlled and checked that they was correctly setup, 
+                                        and you don't have to wait to the day after to start analyzing the recorded
+                                        files.
+                                    </li>
+                                    <li>
+                                        The last one is a permanent station at home where the WURB detector is
+                                        connected and powered by using Power-over-Ethernet, PoE. It is then open
+                                        to the internet and anyone can log in as a read-only user and download
+                                        files by using SFTP. It was deployed in may 2021 (and today after nearly 7 month
+                                        I recorded a Vespertilio murinus, 20 cm snow, 0 degC and twelve days
+                                        before Christmas).
+                                    </li>
+                                </ul>
+                                </p>
+                                <p class="mb-4">
+                                    There is a user manual for the WURB detector here:<br>
+                                    <a
+                                        href="https://github.com/cloudedbats/cloudedbats_wurb_2020/blob/master/docs/user_manual_basic.md">
+                                        CloudedBats-WURB-2020, User manual - basic usage
+                                    </a>.
+                                </p>
 
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Voluptates distinctio ut ratione, nemo tenetur molestiae est vel assumenda veniam
-                            cupiditate hic sint libero mollitia autem magni nesciunt earum esse cum. Minus
-                            consectetur
-                            eius molestias. Dicta excepturi quibusdam qui fuga itaque neque aliquid dolores
-                            quas,
-                            nobis rem eligendi optio numquam a?
-                        </p>
-                        <p class="buttons mt-4">
-                            <button class="button">
-                                <span class="icon">
-                                    <i class="fab fa-github"></i>
-                                </span>
-                                <span>GitHub</span>
-                            </button>
-                        </p>
+                                <p class="mb-4">
+                                    A more detailed description and installation instructions can be found in the
+                                    source code repository at GitHub:<br>
+                                    <a href="https://github.com/cloudedbats/cloudedbats_wurb_2020">
+                                        CloudedBats-WURB-2020
+                                    </a>.
+                                </p>
 
-                        <p class="subtitle mt-6">
-                            The Pathfinder detector
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur repudiandae rerum
-                            ipsum voluptas! Omnis, non quo ullam quis eveniet maiores dolorem, inventore aliquid
-                            mollitia odit exercitationem ex expedita, laborum natus.
-
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Voluptates distinctio ut ratione, nemo tenetur molestiae est vel assumenda veniam
-                            cupiditate hic sint libero mollitia autem magni nesciunt earum esse cum. Minus
-                            consectetur
-                            eius molestias. Dicta excepturi quibusdam qui fuga itaque neque aliquid dolores
-                            quas,
-                            nobis rem eligendi optio numquam a?
-                        </p>
+                                <p class="subtitle mt-6">
+                                    The Pathfinder detector
+                                </p>
+                                <p class="mb-4">
+                                    Pathfinder is an experimental detector for active monitoring only. The plan is to
+                                    have stereo sound and also night vision by using infrared light.
+                                    The stereo part is already working and I'm working on the night vision part.
+                                    Maybe there will be a prototype available during 2022.
+                                </p>
+                        </div>
                     </div>
                     <div class="column">
                         <p class="buttons mt-2">
@@ -180,23 +305,20 @@
                         <h1 class="title">
                             Post processing
                         </h1>
-                        <p class="subtitle mt-2">
+                        <p class="subtitle my-4">
                             Lorem ipsum dolor
                         </p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur repudiandae
-                            rerum
-                            ipsum voluptas! Omnis, non quo ullam quis eveniet maiores dolorem, inventore
-                            aliquid
+                        <p class="mb-4">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur repudiandae rerum
+                            ipsum voluptas! Omnis, non quo ullam quis eveniet maiores dolorem, inventore aliquid
                             mollitia odit exercitationem ex expedita, laborum natus.
 
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Voluptates distinctio ut ratione, nemo tenetur molestiae est vel assumenda
-                            veniam
-                            cupiditate hic sint libero mollitia autem magni nesciunt earum esse cum.
-                            Minus consectetur
-                            eius molestias. Dicta excepturi quibusdam qui fuga itaque neque aliquid
-                            dolores quas,
+                            Voluptates distinctio ut ratione, nemo tenetur molestiae est vel assumenda veniam
+                            cupiditate hic sint libero mollitia autem magni nesciunt earum esse cum. Minus
+                            consectetur
+                            eius molestias. Dicta excepturi quibusdam qui fuga itaque neque aliquid dolores
+                            quas,
                             nobis rem eligendi optio numquam a?
                         </p>
                     </div>
@@ -221,10 +343,10 @@
                         <h1 class="title">
                             Future plans
                         </h1>
-                        <p class="subtitle mt-2">
+                        <p class="subtitle my-4">
                             Lorem ipsum dolor
                         </p>
-                        <p>
+                        <p class="mb-4">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
                             repudiandae rerum
                             ipsum voluptas! Omnis, non quo ullam quis eveniet maiores dolorem,
@@ -262,10 +384,10 @@
                         <h1 class="title">
                             For developers
                         </h1>
-                        <p class="subtitle mt-2">
+                        <p class="subtitle my-4">
                             Lorem ipsum dolor
                         </p>
-                        <p>
+                        <p class="mb-4">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Tenetur repudiandae rerum
                             ipsum voluptas! Omnis, non quo ullam quis eveniet maiores
@@ -303,10 +425,10 @@
                         <h1 class="title">
                             About
                         </h1>
-                        <p class="subtitle mt-2">
+                        <p class="subtitle my-4">
                             Lorem ipsum dolor
                         </p>
-                        <p>
+                        <p class="mb-4">
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Tenetur repudiandae rerum
                             ipsum voluptas! Omnis, non quo ullam quis eveniet
