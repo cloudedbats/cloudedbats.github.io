@@ -67,7 +67,7 @@
                             today to develop and maintain software in an effective way.
                             Everyone is doing it, both beginners as well as big companies like Google
                             and Microsoft.
-                            And all software development tools and software libraries I uses in the
+                            And all software development tools and software libraries I use in the
                             CloudedBats project are open and free. Then it is an easy decision
                             to also let my software to be open and free.
                         </p>
@@ -191,8 +191,10 @@
                                     The user interface for the detector is a web page that can run in a web
                                     browser in your computer or mobile phone.
                                     Recorded files can be stored on USB memorry sticks, or internally in the
-                                    detector for later download to a computer. Then there are extra options like
-                                    USB GPS receivers and USB 4G modems for internet access.
+                                    detector for later download to a computer.
+                                    Then there are extra options like
+                                    USB GPS receivers for time and position and
+                                    USB 4G modems for internet access.
                                 </p>
                                 <p>
                                     There are two things that makes other bat detector alternatives better.
@@ -217,7 +219,8 @@
                                     option for configuration and control.
                                     In 2020 I started a complete redesign of the software and the version called
                                     "CloudedBats_WURB_2020" is more or less like I want it to be.
-                                    There are a lot of users and there are nearly no issues reported.
+                                    There are users in a couple of countries and there are nearly no issues
+                                    reported that are related to reliability and stability.
                                 </p>
                                 <p class="mb-4">
                                     For my personal use I have four of them for field work, and some more for
@@ -240,7 +243,7 @@
                                         The GPS receiver can be removed after deployment since the position will
                                         not change. If they are within a WiFi network they can be controlled
                                         remotely and recorded files can be download while they are running and
-                                        are recording new files. I also have two 4G modems that be used to set up
+                                        are recording new files. I also have two 4G modems that can be used to set up
                                         communication tunnels (similar to VPN) for remote access and file download
                                         from anywhere where internet is available. This is really handy because the
                                         detectors can then be controlled and checked that they was correctly setup,
@@ -251,9 +254,10 @@
                                         The last one is a permanent station at home where the WURB detector is
                                         connected and powered by using Power-over-Ethernet, PoE. It is then open
                                         to the internet and anyone can log in as a read-only user and download
-                                        files by using SFTP. It was deployed in may 2021 (and today after nearly 7 month
-                                        I recorded a Vespertilio murinus, 20 cm snow, 0 degC and twelve days
-                                        before Christmas).
+                                        files by using SFTP. It was deployed in may 2021 and except for some problems
+                                        with thunderstorms it has been running for about 7 months at the moment
+                                        (and there are bat activities even when there is snow and the temperature
+                                        is below zero degC).
                                     </li>
                                 </ul>
                                 </p>
@@ -265,7 +269,7 @@
                                     </a>.
                                 </p>
 
-                                <p class="mb-4">
+                                <p>
                                     A more detailed description and installation instructions can be found in the
                                     source code repository at GitHub:<br>
                                     <a href="https://github.com/cloudedbats/cloudedbats_wurb_2020">
@@ -273,7 +277,7 @@
                                     </a>.
                                 </p>
 
-                                <p class="subtitle mt-6">
+                                <p class="subtitle my-4">
                                     The Pathfinder detector
                                 </p>
                                 <p class="mb-4">
@@ -281,6 +285,30 @@
                                     have stereo sound and also night vision by using infrared light.
                                     The stereo part is already working and I'm working on the night vision part.
                                     Maybe there will be a prototype available during 2022.
+                                </p>
+
+                                <p class="subtitle my-4">
+                                    The AudioMoth detector
+                                </p>
+                                <p class="mb-4">
+                                    This is another open source detector that uses an interesting concept by
+                                    also implementing open hardware. They are a good complement to my style of
+                                    bat detector and can be setup to run over longer time periods and the price
+                                    tag is low.
+                                    That means if you need many detectors for a survey, or want to introduce
+                                    new people to bats, then AudioMoth definitely is an option.
+                                </p>
+                                <p class="mb-4">
+                                    My plan is to also support sound files recorded by the AudioMoth detectors
+                                    when developing the post processing parts. There are some limitation when
+                                    recording files by using that kind of minimalistic/low power processor that
+                                    can easily be handled in a post processing step.
+                                </p>
+                                <p class="mb-4">
+                                    Read more about the AudioMoth project here:<br>
+                                    <a href="https://www.openacousticdevices.info/audiomoth">
+                                        OpenAcousticDevices - AudioMoth
+                                    </a>
                                 </p>
                         </div>
                     </div>
@@ -305,21 +333,44 @@
                         <h1 class="title">
                             Post processing
                         </h1>
-                        <p class="subtitle my-4">
-                            Lorem ipsum dolor
+                        <p class="mb-4">
+                            Post processing is about everything that happens when the sound files
+                            are recorded. The most common situation seems to be something like this;
+                            detectors are deployed over night and collected the day after, then some
+                            SD cards, or similar, are moved to a desktop computer where the analysis is
+                            done by using some kind of software installed on that computer.
+                            In many cases the files are collected during the so called "bat season"
+                            and the analysis is done after the season. Then the results are documented
+                            just before the preparation for the next "bat season" begins.
                         </p>
                         <p class="mb-4">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur repudiandae rerum
-                            ipsum voluptas! Omnis, non quo ullam quis eveniet maiores dolorem, inventore aliquid
-                            mollitia odit exercitationem ex expedita, laborum natus.
-
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Voluptates distinctio ut ratione, nemo tenetur molestiae est vel assumenda veniam
-                            cupiditate hic sint libero mollitia autem magni nesciunt earum esse cum. Minus
-                            consectetur
-                            eius molestias. Dicta excepturi quibusdam qui fuga itaque neque aliquid dolores
-                            quas,
-                            nobis rem eligendi optio numquam a?
+                            There are many things that can be handled in a more efficient way.
+                            For me as an amateur there is no specific "bat season". Bats are
+                            active also during winter and the most interesting things happens
+                            outside the traditional "bat season",
+                            during migrations, mating periods, etc.
+                            If we can't get an automatically generated activity report from last
+                            nights deployed detectors ready before the morning coffee
+                            then we are probably loosing a lot of people that are not payed for
+                            working with bats.
+                        </p>
+                        <p class="mb-4">
+                            On the next page
+                            (<a onclick="hideShowParts('future-plans');">Future plans</a>)
+                            there are some techniques described that can be used
+                            to implement a post processing pipeline.
+                        </p>
+                        <p class="mb-4">
+                            A strong requirement from my side is that a user should be able to
+                            work without the need of a laptop computer. It's a challenge to develop
+                            that kind of systems, but needed to make it possible to work together
+                            and engage more people to work with bats.
+                        </p>
+                        <p class="subtitle my-4">
+                            Subtitle...
+                        </p>
+                        <p class="mb-4">
+                            Text...
                         </p>
                     </div>
                     <div class="column">
@@ -343,24 +394,83 @@
                         <h1 class="title">
                             Future plans
                         </h1>
+                        <p class="mb-4">
+                            <em>Future plans</em> is basically the same as the earlier page
+                            <em>Post processing</em>, but more topic based. Together they can
+                            be used in some sort of post processing pipeline that is more or
+                            less automated.
+                        </p>
                         <p class="subtitle my-4">
-                            Lorem ipsum dolor
+                            Remotely controlled bat detectors
                         </p>
                         <p class="mb-4">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-                            repudiandae rerum
-                            ipsum voluptas! Omnis, non quo ullam quis eveniet maiores dolorem,
-                            inventore aliquid
-                            mollitia odit exercitationem ex expedita, laborum natus.
-
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Voluptates distinctio ut ratione, nemo tenetur molestiae est vel
-                            assumenda veniam
-                            cupiditate hic sint libero mollitia autem magni nesciunt earum esse
-                            cum. Minus consectetur
-                            eius molestias. Dicta excepturi quibusdam qui fuga itaque neque
-                            aliquid dolores quas,
-                            nobis rem eligendi optio numquam a?
+                            Text...
+                        </p>
+                        <p class="mb-4">
+                            Status:
+                        </p>
+                        <p class="subtitle my-4">
+                            Bat detectors for education
+                        </p>
+                        <p class="mb-4">
+                            Text...
+                        </p>
+                        <p class="mb-4">
+                            Status:
+                        </p>
+                        <p class="subtitle my-4">
+                            International network of public bat detectors
+                        </p>
+                        <p class="mb-4">
+                            Text...
+                        </p>
+                        <p class="mb-4">
+                            Status:
+                        </p>
+                        <p class="subtitle my-4">
+                            Central storage of recorded files
+                        </p>
+                        <p class="mb-4">
+                            Text...
+                        </p>
+                        <p class="mb-4">
+                            Status:
+                        </p>
+                        <p class="subtitle my-4">
+                            Central server for post processing
+                        </p>
+                        <p class="mb-4">
+                            Text...
+                        </p>
+                        <p class="mb-4">
+                            Status:
+                        </p>
+                        <p class="subtitle my-4">
+                            AI - Artificial intelligence
+                        </p>
+                        <p class="mb-4">
+                            Text...
+                        </p>
+                        <p class="mb-4">
+                            Status:
+                        </p>
+                        <p class="subtitle my-4">
+                            Systematic surveys for citizen science
+                        </p>
+                        <p class="mb-4">
+                            Text...
+                        </p>
+                        <p class="mb-4">
+                            Status:
+                        </p>
+                        <p class="subtitle my-4">
+                            Export format for surveys in DarwinCore
+                        </p>
+                        <p class="mb-4">
+                            Text...
+                        </p>
+                        <p class="mb-4">
+                            Status:
                         </p>
                     </div>
                     <div class="column">
@@ -385,23 +495,10 @@
                             For developers
                         </h1>
                         <p class="subtitle my-4">
-                            Lorem ipsum dolor
+                            Subtitle...
                         </p>
                         <p class="mb-4">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Tenetur repudiandae rerum
-                            ipsum voluptas! Omnis, non quo ullam quis eveniet maiores
-                            dolorem, inventore aliquid
-                            mollitia odit exercitationem ex expedita, laborum natus.
-
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Voluptates distinctio ut ratione, nemo tenetur molestiae est
-                            vel assumenda veniam
-                            cupiditate hic sint libero mollitia autem magni nesciunt
-                            earum esse cum. Minus consectetur
-                            eius molestias. Dicta excepturi quibusdam qui fuga itaque
-                            neque aliquid dolores quas,
-                            nobis rem eligendi optio numquam a?
+                            Text...
                         </p>
                     </div>
                     <div class="column">
@@ -426,25 +523,10 @@
                             About
                         </h1>
                         <p class="subtitle my-4">
-                            Lorem ipsum dolor
+                            Subtitle...
                         </p>
                         <p class="mb-4">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Tenetur repudiandae rerum
-                            ipsum voluptas! Omnis, non quo ullam quis eveniet
-                            maiores dolorem, inventore aliquid
-                            mollitia odit exercitationem ex expedita, laborum
-                            natus.
-
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit.
-                            Voluptates distinctio ut ratione, nemo tenetur
-                            molestiae est vel assumenda veniam
-                            cupiditate hic sint libero mollitia autem magni
-                            nesciunt earum esse cum. Minus consectetur
-                            eius molestias. Dicta excepturi quibusdam qui fuga
-                            itaque neque aliquid dolores quas,
-                            nobis rem eligendi optio numquam a?
+                            Text...
                         </p>
                     </div>
                     <div class="column">
