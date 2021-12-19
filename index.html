@@ -27,8 +27,9 @@
                 <a class="navbar-item has-text-weight-bold" onclick="hideShowParts('introduction');">CloudedBats</a>
                 <a class="navbar-item" onclick="hideShowParts('bat-detectors');">Bat detectors</a>
                 <a class="navbar-item" onclick="hideShowParts('post-processing');">Post processing</a>
-                <a class="navbar-item" onclick="hideShowParts('future-plans');">Future plans</a>
-                <a class="navbar-item" onclick="hideShowParts('for-developers');">For developers</a>
+                <a class="navbar-item" onclick="hideShowParts('stations');">Stations</a>
+                <a class="navbar-item" onclick="hideShowParts('surveys');">Surveys</a>
+                <a class="navbar-item" onclick="hideShowParts('news');">News</a>
             </div>
             <div class="navbar-end">
                 <a class="navbar-item pr-6" onclick="hideShowParts('about');">About</a>
@@ -49,8 +50,8 @@
                         </h1>
                         <p class="mb-4">
                             CloudedBats is my hobby/spare-time project where I'm trying
-                            to develop a complete set of software tools to be used when
-                            acoustically monitoring bats.
+                            to develop a complete set of open and free software tools to 
+                            be used when acoustically monitoring bats.
                             In the end it should cover the whole path from the ultrasonic
                             microphone to well documented survey results that can be shared.
                         </p>
@@ -182,134 +183,134 @@
                                     This is the part that I develop myself. Mainly based on my own needs and
                                     what I think is fun to develop.
                                 </li>
-                                </ul>
-                                </p>
-                                <p>
-                                    The rest is probably things you already have. Power supply for the
-                                    Raspberry Pi computer is the same as the USB power sources used for mobile
-                                    phones.
-                                    The user interface for the detector is a web page that can run in a web
-                                    browser in your computer or mobile phone.
-                                    Recorded files can be stored on USB memorry sticks, or internally in the
-                                    detector for later download to a computer.
-                                    Then there are extra options like
-                                    USB GPS receivers for time and position and
-                                    USB 4G modems for internet access.
-                                </p>
-                                <p>
-                                    There are two things that makes other bat detector alternatives better.
-                                    One is power consumption and the Raspberry Pi needs up to 5 Watt of power
-                                    where other detectors can run for weeks on standard batteries.
-                                    A slightly bigger Powerbank can be used for single night sessions and will
-                                    last for about 12 hours.
-                                    If power is available you can use a mobile phone charger and run it permanently.
-                                </p>
-                                <p>
-                                    The other problem is that you must know a little about computers and how to run
-                                    commands from a terminal window when installing the software.
-                                    If you don't have that knowledge you must ask for help, but I think that there
-                                    are many people who will be happy and found it interesting to set up a
-                                    Raspberry Pi for bat monitoring if you ask them.
-                                </p>
-                                <p class="subtitle my-4">
-                                    The WURB detector
-                                </p>
-                                <p class="mb-4">
-                                    The WURB detector has been developed since 2017 and I have tried different
-                                    option for configuration and control.
-                                    In 2020 I started a complete redesign of the software and the version called
-                                    "CloudedBats_WURB_2020" is more or less like I want it to be.
-                                    There are users in a couple of countries and there are nearly no issues
-                                    reported that are related to reliability and stability.
-                                </p>
-                                <p class="mb-4">
-                                    For my personal use I have four of them for field work, and some more for
-                                    development and test.
-                                    The field work detectors are all equipped with Pettersson u384 microphones and
-                                    are configured like this:
-                                <ul>
-                                    <li>
-                                        One WURB detector is for active monitoring. Audio feedback is activated and I
-                                        use a technique called pitch shifting for that.
-                                        It is like frequency division but the sound quality is not destroyed,
-                                        the frequencies are just divided by a factor between 10 and 50.
-                                        Recordings can be triggered either manually or automatically when sound is
-                                        detected.
-                                        If a GPS receiver is attached each file will have the correct position in the
-                                        file name that makes is useful for transect monitoring.
-                                    </li>
-                                    <li>
-                                        Then I have two detectors with powerbanks for deployment over night.
-                                        The GPS receiver can be removed after deployment since the position will
-                                        not change. If they are within a WiFi network they can be controlled
-                                        remotely and recorded files can be download while they are running and
-                                        are recording new files. I also have two 4G modems that can be used to set up
-                                        communication tunnels (similar to VPN) for remote access and file download
-                                        from anywhere where internet is available. This is really handy because the
-                                        detectors can then be controlled and checked that they was correctly setup,
-                                        and you don't have to wait to the day after to start analyzing the recorded
-                                        files.
-                                    </li>
-                                    <li>
-                                        The last one is a permanent station at home where the WURB detector is
-                                        connected and powered by using Power-over-Ethernet, PoE. It is then open
-                                        to the internet and anyone can log in as a read-only user and download
-                                        files by using SFTP. It was deployed in may 2021 and except for some problems
-                                        with thunderstorms it has been running for about 7 months at the moment
-                                        (and there are bat activities even when there is snow and the temperature
-                                        is below zero degC).
-                                    </li>
-                                </ul>
-                                </p>
-                                <p class="mb-4">
-                                    There is a user manual for the WURB detector here:<br>
-                                    <a
-                                        href="https://github.com/cloudedbats/cloudedbats_wurb_2020/blob/master/docs/user_manual_basic.md">
-                                        CloudedBats-WURB-2020, User manual - basic usage
-                                    </a>.
-                                </p>
+                            </ol>
+                            </p>
+                            <p>
+                                The rest is probably things you already have. Power supply for the
+                                Raspberry Pi computer is the same as the USB power sources used for mobile
+                                phones.
+                                The user interface for the detector is a web page that can run in a web
+                                browser in your computer or mobile phone.
+                                Recorded files can be stored on USB memorry sticks, or internally in the
+                                detector for later download to a computer.
+                                Then there are extra options like
+                                USB GPS receivers for time and position and
+                                USB 4G modems for internet access.
+                            </p>
+                            <p>
+                                There are two things that makes other bat detector alternatives better.
+                                One is power consumption and the Raspberry Pi needs up to 5 Watt of power
+                                where other detectors can run for weeks on standard batteries.
+                                A slightly bigger Powerbank can be used for single night sessions and will
+                                last for about 12 hours.
+                                If power is available you can use a mobile phone charger and run it permanently.
+                            </p>
+                            <p>
+                                The other problem is that you must know a little about computers and how to run
+                                commands from a terminal window when installing the software.
+                                If you don't have that knowledge you must ask for help, but I think that there
+                                are many people who will be happy and found it interesting to set up a
+                                Raspberry Pi for bat monitoring if you ask them.
+                            </p>
+                            <p class="subtitle my-4">
+                                The WURB detector
+                            </p>
+                            <p class="mb-4">
+                                The WURB detector has been developed since 2017 and I have tried different
+                                option for configuration and control.
+                                In 2020 I started a complete redesign of the software and the version called
+                                "CloudedBats_WURB_2020" is more or less like I want it to be.
+                                There are users in a couple of countries and there are nearly no issues
+                                reported that are related to reliability and stability.
+                            </p>
+                            <p class="mb-4">
+                                For my personal use I have four of them for field work, and some more for
+                                development and test.
+                                The field work detectors are all equipped with Pettersson u384 microphones and
+                                are configured like this:
+                            <ul>
+                                <li>
+                                    One WURB detector is for active monitoring. Audio feedback is activated and I
+                                    use a technique called pitch shifting for that.
+                                    It is like frequency division but the sound quality is not destroyed,
+                                    the frequencies are just divided by a factor between 10 and 50.
+                                    Recordings can be triggered either manually or automatically when sound is
+                                    detected.
+                                    If a GPS receiver is attached each file will have the correct position in the
+                                    file name that makes is useful for transect monitoring.
+                                </li>
+                                <li>
+                                    Then I have two detectors with powerbanks for deployment over night.
+                                    The GPS receiver can be removed after deployment since the position will
+                                    not change. If they are within a WiFi network they can be controlled
+                                    remotely and recorded files can be download while they are running and
+                                    are recording new files. I also have two 4G modems that can be used to set up
+                                    communication tunnels (similar to VPN) for remote access and file download
+                                    from anywhere where internet is available. This is really handy because the
+                                    detectors can then be controlled and checked that they was correctly setup,
+                                    and you don't have to wait to the day after to start analyzing the recorded
+                                    files.
+                                </li>
+                                <li>
+                                    The last one is a permanent station at home where the WURB detector is
+                                    connected and powered by using Power-over-Ethernet, PoE. It is then open
+                                    to the internet and anyone can log in as a read-only user and download
+                                    files by using SFTP. It was deployed in may 2021 and except for some problems
+                                    with thunderstorms it has been running for about 7 months at the moment
+                                    (and there are bat activities even when there is snow and the temperature
+                                    is below zero degC).
+                                </li>
+                            </ul>
+                            </p>
+                            <p class="mb-4">
+                                There is a user manual for the WURB detector here:<br>
+                                <a
+                                    href="https://github.com/cloudedbats/cloudedbats_wurb_2020/blob/master/docs/user_manual_basic.md">
+                                    CloudedBats-WURB-2020, User manual - basic usage
+                                </a>.
+                            </p>
 
-                                <p>
-                                    A more detailed description and installation instructions can be found in the
-                                    source code repository at GitHub:<br>
-                                    <a href="https://github.com/cloudedbats/cloudedbats_wurb_2020">
-                                        CloudedBats-WURB-2020
-                                    </a>.
-                                </p>
+                            <p>
+                                A more detailed description and installation instructions can be found in the
+                                source code repository at GitHub:<br>
+                                <a href="https://github.com/cloudedbats/cloudedbats_wurb_2020">
+                                    CloudedBats-WURB-2020
+                                </a>.
+                            </p>
 
-                                <p class="subtitle my-4">
-                                    The Pathfinder detector
-                                </p>
-                                <p class="mb-4">
-                                    Pathfinder is an experimental detector for active monitoring only. The plan is to
-                                    have stereo sound and also night vision by using infrared light.
-                                    The stereo part is already working and I'm working on the night vision part.
-                                    Maybe there will be a prototype available during 2022.
-                                </p>
+                            <p class="subtitle my-4">
+                                The Pathfinder detector
+                            </p>
+                            <p class="mb-4">
+                                Pathfinder is an experimental detector for active monitoring only. The plan is to
+                                have stereo sound and also night vision by using infrared light.
+                                The stereo part is already working and I'm working on the night vision part.
+                                Maybe there will be a prototype available during 2022.
+                            </p>
 
-                                <p class="subtitle my-4">
-                                    The AudioMoth detector
-                                </p>
-                                <p class="mb-4">
-                                    This is another open source detector that uses an interesting concept by
-                                    also implementing open hardware. They are a good complement to my style of
-                                    bat detector and can be setup to run over longer time periods and the price
-                                    tag is low.
-                                    That means if you need many detectors for a survey, or want to introduce
-                                    new people to bats, then AudioMoth definitely is an option.
-                                </p>
-                                <p class="mb-4">
-                                    My plan is to also support sound files recorded by the AudioMoth detectors
-                                    when developing the post processing parts. There are some limitation when
-                                    recording files by using that kind of minimalistic/low power processor that
-                                    can easily be handled in a post processing step.
-                                </p>
-                                <p class="mb-4">
-                                    Read more about the AudioMoth project here:<br>
-                                    <a href="https://www.openacousticdevices.info/audiomoth">
-                                        OpenAcousticDevices - AudioMoth
-                                    </a>
-                                </p>
+                            <p class="subtitle my-4">
+                                The AudioMoth detector
+                            </p>
+                            <p class="mb-4">
+                                This is another open source detector that uses an interesting concept by
+                                also implementing open hardware. They are a good complement to my style of
+                                bat detector and can be setup to run over longer time periods and the price
+                                tag is low.
+                                That means if you need many detectors for a survey, or want to introduce
+                                new people to bats, then AudioMoth definitely is an option.
+                            </p>
+                            <p class="mb-4">
+                                My plan is to also support sound files recorded by the AudioMoth detectors
+                                when developing the post processing parts. There are some limitation when
+                                recording files by using that kind of minimalistic/low power processor that
+                                can easily be handled in a post processing step.
+                            </p>
+                            <p class="mb-4">
+                                Read more about the AudioMoth project here:<br>
+                                <a href="https://www.openacousticdevices.info/audiomoth">
+                                    OpenAcousticDevices - AudioMoth
+                                </a>
+                            </p>
                         </div>
                     </div>
                     <div class="column">
@@ -354,12 +355,12 @@
                             then we are probably loosing a lot of people that are not payed for
                             working with bats.
                         </p>
-                        <p class="mb-4">
+                        <!-- <p class="mb-4">
                             On the next page
                             (<a onclick="hideShowParts('future-plans');">Future plans</a>)
                             there are some techniques described that can be used
                             to implement a post processing pipeline.
-                        </p>
+                        </p> -->
                         <p class="mb-4">
                             A strong requirement from my side is that a user should be able to
                             work without the need of a laptop computer. It's a challenge to develop
@@ -375,7 +376,7 @@
                     </div>
                     <div class="column">
                         <p class="buttons mt-2">
-                            <button class="button is-light" onclick="hideShowParts('future-plans');">
+                            <button class="button is-light" onclick="hideShowParts('stations');">
                                 Next
                             </button>
                             <button class="button is-light" onclick="hideShowParts('bat-detectors');">
@@ -387,7 +388,7 @@
             </div>
 
             <!-- FUTURE PLANS -->
-            <div id="div_future_plans_id" style="visibility:hidden; overflow:hidden; height:0; width:0;" class="">
+<!--             <div id="div_future_plans_id" style="visibility:hidden; overflow:hidden; height:0; width:0;" class="">
                 <section class="columns px-2-mobile px-6-tablet">
                     <div class="column"></div>
                     <div class="column is-four-fifths">
@@ -485,14 +486,70 @@
                     </div>
                 </section>
             </div>
-
-            <!-- FOR DEVELOPERS -->
-            <div id="div_for_developers_id" style="visibility:hidden; overflow:hidden; height:0; width:0;" class="">
+ -->
+            <!-- Stations -->
+            <div id="div_stations_id" style="visibility:hidden; overflow:hidden; height:0; width:0;" class="">
                 <section class="columns px-2-mobile px-6-tablet">
                     <div class="column"></div>
                     <div class="column is-four-fifths">
                         <h1 class="title">
-                            For developers
+                            Stations
+                        </h1>
+                        <p class="subtitle my-4">
+                            Subtitle...
+                        </p>
+                        <p class="mb-4">
+                            Text...
+                        </p>
+                    </div>
+                    <div class="column">
+                        <p class="buttons mt-2">
+                            <button class="button is-light" onclick="hideShowParts('surveys');">
+                                Next
+                            </button>
+                            <button class="button is-light" onclick="hideShowParts('post-processing');">
+                                Previous
+                            </button>
+                        </p>
+                    </div>
+                </section>
+            </div>
+
+            <!-- SURVEYS -->
+            <div id="div_surveys_id" style="visibility:hidden; overflow:hidden; height:0; width:0;" class="">
+                <section class="columns px-2-mobile px-6-tablet">
+                    <div class="column"></div>
+                    <div class="column is-four-fifths">
+                        <h1 class="title">
+                            Surveys
+                        </h1>
+                        <p class="subtitle my-4">
+                            Subtitle...
+                        </p>
+                        <p class="mb-4">
+                            Text...
+                        </p>
+                    </div>
+                    <div class="column">
+                        <p class="buttons mt-2">
+                            <button class="button is-light" onclick="hideShowParts('news');">
+                                Next
+                            </button>
+                            <button class="button is-light" onclick="hideShowParts('stations');">
+                                Previous
+                            </button>
+                        </p>
+                    </div>
+                </section>
+            </div>
+
+            <!-- NEWS -->
+            <div id="div_news_id" style="visibility:hidden; overflow:hidden; height:0; width:0;" class="">
+                <section class="columns px-2-mobile px-6-tablet">
+                    <div class="column"></div>
+                    <div class="column is-four-fifths">
+                        <h1 class="title">
+                            News
                         </h1>
                         <p class="subtitle my-4">
                             Subtitle...
@@ -506,7 +563,7 @@
                             <button class="button is-light" onclick="hideShowParts('about');">
                                 Next
                             </button>
-                            <button class="button is-light" onclick="hideShowParts('future-plans');">
+                            <button class="button is-light" onclick="hideShowParts('surveys');">
                                 Previous
                             </button>
                         </p>
@@ -531,7 +588,7 @@
                     </div>
                     <div class="column">
                         <p class="buttons mt-2">
-                            <button class="button is-light" onclick="hideShowParts('for-developers');">
+                            <button class="button is-light" onclick="hideShowParts('news');">
                                 Previous
                             </button>
                         </p>

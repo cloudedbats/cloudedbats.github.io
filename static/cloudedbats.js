@@ -2,8 +2,11 @@
 const div_introduction_id = document.getElementById("div_introduction_id");
 const div_bat_detectors_id = document.getElementById("div_bat_detectors_id");
 const div_post_processing_id = document.getElementById("div_post_processing_id");
-const div_future_plans_id = document.getElementById("div_future_plans_id");
-const div_for_developers_id = document.getElementById("div_for_developers_id");
+const div_stations_id = document.getElementById("div_stations_id");
+const div_surveys_id = document.getElementById("div_surveys_id");
+const div_news_id = document.getElementById("div_news_id");
+// const div_future_plans_id = document.getElementById("div_future_plans_id");
+// const div_for_developers_id = document.getElementById("div_for_developers_id");
 const div_about_id = document.getElementById("div_about_id");
 
 function hideDivision(div_id) {
@@ -28,14 +31,20 @@ function hideShowParts(tab_name) {
   div_introduction_id.classList.remove("is-active");
   div_bat_detectors_id.classList.remove("is-active");
   div_post_processing_id.classList.remove("is-active");
-  div_future_plans_id.classList.remove("is-active");
-  div_for_developers_id.classList.remove("is-active");
+  div_stations_id.classList.remove("is-active");
+  div_surveys_id.classList.remove("is-active");
+  div_news_id.classList.remove("is-active");
+  // div_future_plans_id.classList.remove("is-active");
+  // div_for_developers_id.classList.remove("is-active");
   div_about_id.classList.remove("is-active");
   hideDivision(div_introduction_id)
   hideDivision(div_bat_detectors_id)
   hideDivision(div_post_processing_id)
-  hideDivision(div_future_plans_id)
-  hideDivision(div_for_developers_id)
+  hideDivision(div_stations_id)
+  hideDivision(div_surveys_id)
+  hideDivision(div_news_id)
+  // hideDivision(div_future_plans_id)
+  // hideDivision(div_for_developers_id)
   hideDivision(div_about_id)
 
   if (tab_name == "introduction") {
@@ -47,12 +56,21 @@ function hideShowParts(tab_name) {
   } else if (tab_name == "post-processing") {
     div_post_processing_id.classList.add("is-active");
     showDivision(div_post_processing_id)
-  } else if (tab_name == "future-plans") {
-    div_future_plans_id.classList.add("is-active");
-    showDivision(div_future_plans_id)
-  } else if (tab_name == "for-developers") {
-    div_for_developers_id.classList.add("is-active");
-    showDivision(div_for_developers_id)
+  } else if (tab_name == "stations") {
+    div_stations_id.classList.add("is-active");
+    showDivision(div_stations_id)
+  } else if (tab_name == "surveys") {
+    div_surveys_id.classList.add("is-active");
+    showDivision(div_surveys_id)
+  } else if (tab_name == "news") {
+    div_news_id.classList.add("is-active");
+    showDivision(div_news_id)
+  // } else if (tab_name == "future-plans") {
+  //   div_future_plans_id.classList.add("is-active");
+  //   showDivision(div_future_plans_id)
+  // } else if (tab_name == "for-developers") {
+  //   div_for_developers_id.classList.add("is-active");
+  //   showDivision(div_for_developers_id)
   } else if (tab_name == "about") {
     div_about_id.classList.add("is-active");
     showDivision(div_about_id)
