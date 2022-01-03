@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-black" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="http://cloudedbats.org">
                 <!-- <img src="cloudedbats_logo.png" width="100px" height="200px"> -->
@@ -45,70 +45,72 @@
                 <section class="columns px-2-mobile px-6-tablet">
                     <div class="column"></div>
                     <div class="column is-full-mobile is-four-fifths-tablet">
-                        <h1 class="title">
-                            Welcome to CloudedBats
-                        </h1>
-                        <p class="mb-4">
-                            CloudedBats is my hobby/spare-time project where I'm trying
-                            to develop a complete set of open and free software tools to 
-                            be used when acoustically monitoring bats.
-                            In the end it should cover the whole path from the ultrasonic
-                            microphone to well documented survey results that can be shared.
-                        </p>
-                        <p class="mb-4">
-                            Target groups are both professionals like scientists and
-                            environmental consultants as well as citizen scientists and
-                            other groups of bat enthusiasts.
-                        </p>
-                        <p class="subtitle mb-4">
-                            Why do we need open source software when monitoring bats?
-                        </p>
-                        <p class="mb-4">
-                            For me as a software developer, collaboration and transparency is the only way
-                            today to develop and maintain software in an effective way.
-                            Everyone is doing it, both beginners as well as big companies like Google
-                            and Microsoft.
-                            And all software development tools and software libraries I use in the
-                            CloudedBats project are open and free. Then it is an easy decision
-                            to also let my software to be open and free.
-                        </p>
-                        <p class="subtitle mb-4">
-                            What about the bats?
-                        </p>
-                        <p class="mb-4">
-                            We know too little about the more than 1400 bat species that has been
-                            found today, and we must speed up the work. It's urgent because we are
-                            living in a rapidly changing world.
-                        </p>
-                        <p class="mb-2">
-                            Therefore my focus is to find solutions that can be used in all countries,
-                            not only in the northern part of Europe where I live. I think it is really
-                            important that we also starts to openly and freely shares the sound
-                            files that has been recorded directly and don't wait until an article or
-                            report has been published. That will make it easier to collaborate if, for
-                            example, both scientists and enthusiasts/citizen scientists share their
-                            data and sound files.
-                        </p>
-                        <p class="mb-4">
-                            You can read more about Open science here:
-                            <a href="https://en.wikipedia.org/wiki/Open_science">Open science</a>.
+                        <div class="content">
+                            <h1 class="title">
+                                Welcome to CloudedBats
+                            </h1>
+                            <p class="mb-4">
+                                CloudedBats is my hobby/spare-time project where I'm trying
+                                to develop a complete set of open and free software tools to
+                                be used when acoustically monitoring bats.
+                                In the end it should cover the whole path from the ultrasonic
+                                microphone to well documented survey results that can be shared.
+                            </p>
+                            <p class="mb-4">
+                                Target groups are both professionals like scientists and
+                                environmental consultants as well as citizen scientists and
+                                other groups of bat enthusiasts.
+                            </p>
+                            <p class="subtitle mb-4">
+                                Why do we need open source software when monitoring bats?
+                            </p>
+                            <p class="mb-4">
+                                For me as a software developer, collaboration and transparency is the only way
+                                today to develop and maintain software in an effective way.
+                                Everyone is doing it, both beginners as well as big companies like Google
+                                and Microsoft.
+                                And all software development tools and software libraries I use in the
+                                CloudedBats project are open and free. Then it is an easy decision
+                                to also let my software to be open and free.
+                            </p>
+                            <p class="subtitle mb-4">
+                                What about the bats?
+                            </p>
+                            <p class="mb-4">
+                                We know too little about the more than 1400 bat species that has been
+                                found today, and we must speed up the work. It's urgent because we are
+                                living in a rapidly changing world.
+                            </p>
+                            <p class="mb-2">
+                                Therefore my focus is to find solutions that can be used in all countries,
+                                not only in the northern part of Europe where I live. I think it is really
+                                important that we also starts to openly and freely shares the sound
+                                files that has been recorded directly and don't wait until an article or
+                                report has been published. That will make it easier to collaborate if, for
+                                example, both scientists and enthusiasts/citizen scientists share their
+                                data and sound files.
+                            </p>
+                            <p class="mb-4">
+                                You can read more about Open science here:
+                                <a href="https://en.wikipedia.org/wiki/Open_science">Open science</a>.
 
-                        </p>
-                        <p class="subtitle mb-4">
-                            Where to start?
-                        </p>
-                        <p class="mb-4">
-                            There are a lot of experimental applications and code parts stored in the
-                            public software repository at GitHub.
-                            They can be of some interest for software developers.
-                            The source code repository can be found here:
-                            <a href="https://github.com/cloudedbats">CloudedBats at GitHub</a>.
-                        </p>
-                        <p class="mb-4">
-                            For normal users the bat detector called <em>WURB</em> is a good start.
-                            You can read more about it on the next page
-                            <a onclick="hideShowParts('bat-detectors');">Bat detectors</a>.
-                        </p>
+                            </p>
+                            <p class="subtitle mb-4">
+                                Where to start?
+                            </p>
+                            <p class="mb-4">
+                                There are a lot of experimental applications and code parts stored in the
+                                public software repository at GitHub.
+                                They can be of some interest for software developers.
+                                The source code repository can be found here:
+                                <a href="https://github.com/cloudedbats">CloudedBats at GitHub</a>.
+                            </p>
+                            <p class="mb-4">
+                                For normal users the bat detector called <em>WURB</em> is a good start.
+                                You can read more about it on the next page
+                                <a onclick="hideShowParts('bat-detectors');">Bat detectors</a>.
+                            </p>
+                        </div>
                     </div>
                     <div class="column">
                         <p class="buttons mt-2">
@@ -146,9 +148,9 @@
                                     if someone want to include parts of it in products that are sold for money.
                                 </li>
                                 <li>
-                                    Hardware should be as cheap as possible and easily available where they are selling
-                                    electronic things. The core part should be a small computer that can run the
-                                    operating
+                                    Hardware should be as cheap as possible and easily available where they are
+                                    selling electronic things.
+                                    The core part should be a small computer that can run the operating
                                     system Linux.
                                 </li>
                                 <li>
@@ -191,16 +193,16 @@
                                 phones.
                                 The user interface for the detector is a web page that can run in a web
                                 browser in your computer or mobile phone.
-                                Recorded files can be stored on USB memorry sticks, or internally in the
+                                Recorded files can be stored on USB memory sticks, or internally in the
                                 detector for later download to a computer.
                                 Then there are extra options like
                                 USB GPS receivers for time and position and
                                 USB 4G modems for internet access.
                             </p>
                             <p>
-                                There are two things that makes other bat detector alternatives better.
+                                There are two main things that makes other bat detector alternatives better.
                                 One is power consumption and the Raspberry Pi needs up to 5 Watt of power
-                                where other detectors can run for weeks on standard batteries.
+                                where many other detectors can run for weeks on standard batteries.
                                 A slightly bigger Powerbank can be used for single night sessions and will
                                 last for about 12 hours.
                                 If power is available you can use a mobile phone charger and run it permanently.
@@ -244,9 +246,10 @@
                                     The GPS receiver can be removed after deployment since the position will
                                     not change. If they are within a WiFi network they can be controlled
                                     remotely and recorded files can be download while they are running and
-                                    are recording new files. I also have two 4G modems that can be used to set up
-                                    communication tunnels (similar to VPN) for remote access and file download
-                                    from anywhere where internet is available. This is really handy because the
+                                    are recording new files. I also have some 4G modems that can be used at remote
+                                    places to set up communication tunnels (similar to VPN) for remote access and
+                                    file download from anywhere where internet is available.
+                                    This is really handy because the
                                     detectors can then be controlled and checked that they was correctly setup,
                                     and you don't have to wait to the day after to start analyzing the recorded
                                     files.
@@ -292,15 +295,16 @@
                                 The AudioMoth detector
                             </p>
                             <p class="mb-4">
-                                This is another open source detector that uses an interesting concept by
-                                also implementing open hardware. They are a good complement to my style of
-                                bat detector and can be setup to run over longer time periods and the price
-                                tag is low.
+                                This is another kind of open source detectors developed by a team at
+                                <a href="https://www.openacousticdevices.info/">Open Acoustic Devices</a>.
+                                They use an interesting concept by also implementing open hardware.
+                                The AudioMoth detector is a good complement to my style of bat detector,
+                                they can be setup to run over longer time periods and the price tag is low.
                                 That means if you need many detectors for a survey, or want to introduce
                                 new people to bats, then AudioMoth definitely is an option.
                             </p>
                             <p class="mb-4">
-                                My plan is to also support sound files recorded by the AudioMoth detectors
+                                My plan is to also support for sound files recorded by the AudioMoth detectors
                                 when developing the post processing parts. There are some limitation when
                                 recording files by using that kind of minimalistic/low power processor that
                                 can easily be handled in a post processing step.
@@ -331,48 +335,73 @@
                 <section class="columns px-2-mobile px-6-tablet">
                     <div class="column"></div>
                     <div class="column is-four-fifths">
-                        <h1 class="title">
-                            Post processing
-                        </h1>
-                        <p class="mb-4">
-                            Post processing is about everything that happens when the sound files
-                            are recorded. The most common situation seems to be something like this;
-                            detectors are deployed over night and collected the day after, then some
-                            SD cards, or similar, are moved to a desktop computer where the analysis is
-                            done by using some kind of software installed on that computer.
-                            In many cases the files are collected during the so called "bat season"
-                            and the analysis is done after the season. Then the results are documented
-                            just before the preparation for the next "bat season" begins.
-                        </p>
-                        <p class="mb-4">
-                            There are many things that can be handled in a more efficient way.
-                            For me as an amateur there is no specific "bat season". Bats are
-                            active also during winter and the most interesting things happens
-                            outside the traditional "bat season",
-                            during migrations, mating periods, etc.
-                            If we can't get an automatically generated activity report from last
-                            nights deployed detectors ready before the morning coffee
-                            then we are probably loosing a lot of people that are not payed for
-                            working with bats.
-                        </p>
-                        <!-- <p class="mb-4">
-                            On the next page
-                            (<a onclick="hideShowParts('future-plans');">Future plans</a>)
-                            there are some techniques described that can be used
-                            to implement a post processing pipeline.
-                        </p> -->
-                        <p class="mb-4">
-                            A strong requirement from my side is that a user should be able to
-                            work without the need of a laptop computer. It's a challenge to develop
-                            that kind of systems, but needed to make it possible to work together
-                            and engage more people to work with bats.
-                        </p>
-                        <p class="subtitle my-4">
-                            Subtitle...
-                        </p>
-                        <p class="mb-4">
-                            Text...
-                        </p>
+                        <div class="content">
+                            <h1 class="title">
+                                Post processing
+                            </h1>
+                            <p class="mb-4">
+                                Post processing is about everything that happens when the sound files
+                                are recorded. The WURB detectors are mainly used in the same way as the
+                                majority of other bat detectors that can record ultrasonic sound;
+                                the sound files are stored on an USB memory stick, or on the internal
+                                SD card, and must then be manually moved, or downloaded, to a computer
+                                where the following sound file analysis can be done.
+                            </p>
+                            <p class="mb-4">
+                                Since the WURB detector uses a Rasperry Pi computer running Linux
+                                there are many things that can be handled in a more efficient way.
+                                My requirements when starting to develop a new workflow for
+                                post processing are:
+                            <ul>
+                                <li>
+                                    Recorded sound files should automatically be moved from connected
+                                    WURB detectors to a central public server.
+                                </li>
+                                <li>
+                                    Collected sound files should be available more or less directly for
+                                    other people to download from the server to do their own analysis.
+                                </li>
+                                <li>
+                                    It should be possible to produce an automatically generated activity
+                                    report from last nights recordings.
+                                    This report should be available via a public web page managed by the
+                                    server.
+                                </li>
+                                <li>
+                                    It should be possible to do some basic sound file analysis direcly
+                                    through the web for files that are stored on the server, as well as
+                                    running automated analyses on the server.
+                                </li>
+                                <li>
+                                    A system for annotations must be developed that can be used both
+                                    for automatically and manually performed analyses.
+                                </li>
+                                <li>
+                                    The basic work should be possible to do by using web pages only.
+                                    It should be possible to easily download files where a deeper analysis
+                                    is needed where the users can use their favorite analysis tools.
+                                </li>
+                            </ul>
+                            </p>
+                            <p class="subtitle my-4">
+                                Data capture
+                            </p>
+                            <p class="mb-4">
+                                Text...
+                            </p>
+                            <p class="subtitle my-4">
+                                Collect data
+                            </p>
+                            <p class="mb-4">
+                                Text...
+                            </p>
+                            <p class="subtitle my-4">
+                                Analysis data
+                            </p>
+                            <p class="mb-4">
+                                Text...
+                            </p>
+                        </div>
                     </div>
                     <div class="column">
                         <p class="buttons mt-2">
@@ -387,120 +416,22 @@
                 </section>
             </div>
 
-            <!-- FUTURE PLANS -->
-<!--             <div id="div_future_plans_id" style="visibility:hidden; overflow:hidden; height:0; width:0;" class="">
-                <section class="columns px-2-mobile px-6-tablet">
-                    <div class="column"></div>
-                    <div class="column is-four-fifths">
-                        <h1 class="title">
-                            Future plans
-                        </h1>
-                        <p class="mb-4">
-                            <em>Future plans</em> is basically the same as the earlier page
-                            <em>Post processing</em>, but more topic based. Together they can
-                            be used in some sort of post processing pipeline that is more or
-                            less automated.
-                        </p>
-                        <p class="subtitle my-4">
-                            Remotely controlled bat detectors
-                        </p>
-                        <p class="mb-4">
-                            Text...
-                        </p>
-                        <p class="mb-4">
-                            Status:
-                        </p>
-                        <p class="subtitle my-4">
-                            Bat detectors for education
-                        </p>
-                        <p class="mb-4">
-                            Text...
-                        </p>
-                        <p class="mb-4">
-                            Status:
-                        </p>
-                        <p class="subtitle my-4">
-                            International network of public bat detectors
-                        </p>
-                        <p class="mb-4">
-                            Text...
-                        </p>
-                        <p class="mb-4">
-                            Status:
-                        </p>
-                        <p class="subtitle my-4">
-                            Central storage of recorded files
-                        </p>
-                        <p class="mb-4">
-                            Text...
-                        </p>
-                        <p class="mb-4">
-                            Status:
-                        </p>
-                        <p class="subtitle my-4">
-                            Central server for post processing
-                        </p>
-                        <p class="mb-4">
-                            Text...
-                        </p>
-                        <p class="mb-4">
-                            Status:
-                        </p>
-                        <p class="subtitle my-4">
-                            AI - Artificial intelligence
-                        </p>
-                        <p class="mb-4">
-                            Text...
-                        </p>
-                        <p class="mb-4">
-                            Status:
-                        </p>
-                        <p class="subtitle my-4">
-                            Systematic surveys for citizen science
-                        </p>
-                        <p class="mb-4">
-                            Text...
-                        </p>
-                        <p class="mb-4">
-                            Status:
-                        </p>
-                        <p class="subtitle my-4">
-                            Export format for surveys in DarwinCore
-                        </p>
-                        <p class="mb-4">
-                            Text...
-                        </p>
-                        <p class="mb-4">
-                            Status:
-                        </p>
-                    </div>
-                    <div class="column">
-                        <p class="buttons mt-2">
-                            <button class="button is-light" onclick="hideShowParts('for-developers');">
-                                Next
-                            </button>
-                            <button class="button is-light" onclick="hideShowParts('post-processing');">
-                                Previous
-                            </button>
-                        </p>
-                    </div>
-                </section>
-            </div>
- -->
             <!-- Stations -->
             <div id="div_stations_id" style="visibility:hidden; overflow:hidden; height:0; width:0;" class="">
                 <section class="columns px-2-mobile px-6-tablet">
                     <div class="column"></div>
                     <div class="column is-four-fifths">
-                        <h1 class="title">
-                            Stations
-                        </h1>
-                        <p class="subtitle my-4">
-                            Subtitle...
-                        </p>
-                        <p class="mb-4">
-                            Text...
-                        </p>
+                        <div class="content">
+                            <h1 class="title">
+                                Stations
+                            </h1>
+                            <p class="subtitle my-4">
+                                Subtitle...
+                            </p>
+                            <p class="mb-4">
+                                Text...
+                            </p>
+                        </div>
                     </div>
                     <div class="column">
                         <p class="buttons mt-2">
@@ -520,15 +451,17 @@
                 <section class="columns px-2-mobile px-6-tablet">
                     <div class="column"></div>
                     <div class="column is-four-fifths">
-                        <h1 class="title">
-                            Surveys
-                        </h1>
-                        <p class="subtitle my-4">
-                            Subtitle...
-                        </p>
-                        <p class="mb-4">
-                            Text...
-                        </p>
+                        <div class="content">
+                            <h1 class="title">
+                                Surveys
+                            </h1>
+                            <p class="subtitle my-4">
+                                Subtitle...
+                            </p>
+                            <p class="mb-4">
+                                Text...
+                            </p>
+                        </div>
                     </div>
                     <div class="column">
                         <p class="buttons mt-2">
@@ -548,15 +481,17 @@
                 <section class="columns px-2-mobile px-6-tablet">
                     <div class="column"></div>
                     <div class="column is-four-fifths">
-                        <h1 class="title">
-                            News
-                        </h1>
-                        <p class="subtitle my-4">
-                            Subtitle...
-                        </p>
-                        <p class="mb-4">
-                            Text...
-                        </p>
+                        <div class="content">
+                            <h1 class="title">
+                                News
+                            </h1>
+                            <p class="subtitle my-4">
+                                Subtitle...
+                            </p>
+                            <p class="mb-4">
+                                Text...
+                            </p>
+                        </div>
                     </div>
                     <div class="column">
                         <p class="buttons mt-2">
@@ -576,15 +511,17 @@
                 <section class="columns px-2-mobile px-6-tablet">
                     <div class="column"></div>
                     <div class="column is-three-fifths">
-                        <h1 class="title">
-                            About
-                        </h1>
-                        <p class="subtitle my-4">
-                            Subtitle...
-                        </p>
-                        <p class="mb-4">
-                            Text...
-                        </p>
+                        <div class="content">
+                            <h1 class="title">
+                                About
+                            </h1>
+                            <p class="subtitle my-4">
+                                Subtitle...
+                            </p>
+                            <p class="mb-4">
+                                Text...
+                            </p>
+                        </div>
                     </div>
                     <div class="column">
                         <p class="buttons mt-2">
